@@ -17,4 +17,19 @@ func main() {
 
 	fmt.Printf("%#v\n", primes)
 	fmt.Printf("%#v\n", test)
+
+	//fmt.Println(test[5]) 컴파일 에러 our of range
+
+	i := 0
+	for i < len(test) { //while
+		fmt.Println(test[i])
+		i++
+	}
+
+	//for idx, prime := range primes { //index만 출력
+	//	fmt.Println(idx, prime)
+	//}
+	for _, prime := range primes {
+		fmt.Println(prime)
+	}
 }
