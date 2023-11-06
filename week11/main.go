@@ -13,4 +13,8 @@ func main() {
 
 	test := [5]bool{true, true, true}
 	fmt.Println(test[3]) //zerovalue
+	fmt.Println(test)
+
+	fmt.Printf("%#v\n", primes)
+	fmt.Printf("%#v\n", test)
 }
